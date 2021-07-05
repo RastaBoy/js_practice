@@ -22,8 +22,25 @@
                 </div>
             </div>
             <div class="nav__item">
-                <div class="nav__button">
-                    <a href="#">Modale</a>
+                <div class="nav__button" onclick="showModaleWindow()">
+                    Modale
+                </div>
+            </div>
+        </div>
+
+        <div id="modale_test" class="modale__body" onclick="">
+            <div class="modale__content">
+                <div class="modale__title">
+                    <h2>Это тестовое модальное окно!</h2>
+                </div>
+                <div class="modale__text">
+                    <p>Это тестовый вариант модального окна.<br>
+                        Чисто теоритически должно уметь отображаться и исчезать при нажатии на всякие кнопошки.
+                    </p>
+                </div>
+                <div class="modale__buttons">
+                    <div class="btn good" onclick="goodBoy()">Тыкни на меня!</div>
+                    <div class="btn bad" onclick="showModaleWindow()">Даже не думай...</div>
                 </div>
             </div>
         </div>
@@ -63,7 +80,7 @@
                             <input type="radio" name="gender" value="rad2"><span>Женский</span>
                             <input type="radio" name="gender" value="rad3"><span>Не определился</span>
                         </div>
-                        <div class="form__item">
+                        <div class="form__item" onclick="sayHello()">
                             <button>Отправить</button>
                         </div>
                     </form>

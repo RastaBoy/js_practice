@@ -22,6 +22,10 @@
     background-color: orange;
     padding: 20px 35px;
     border-radius: 45px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 .nav__button a {
@@ -42,11 +46,74 @@
     font-size: 24px;
 }
 
+/* Модальное окно */
+.modale__body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.411);
+    padding: 100px;
+    display: none;
+    justify-content: center;
+}
+
+.modale__content {
+    min-width: 580px;
+    min-height: 280px;
+    max-height: 320px;
+    background-color: #fff;
+    padding: 60px;
+}
+
+.modale__title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.modale__title h2 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.modale__text {
+    margin-top: 20px;
+    color: #000;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.modale__buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 40px;
+}
+
+.good {
+    background-color: green;
+}
+
+.bad {
+    background-color: red;
+}
+
 /* То, что находится в main'е */
 
 .container {
     background-color: #6b6b6b;
-    min-height: 780px;
+    min-height: 900px;
     padding: 60px;
 }
 
